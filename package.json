@@ -1,6 +1,10 @@
 {
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "bin/test.sh"
+    "test": "bin/test.sh",
+    "prepublish": "bin/build.sh"
   },
   "dependencies": {
     "sql": "^0.58.0"
