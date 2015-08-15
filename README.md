@@ -1,3 +1,5 @@
+> **Important**: Database migrations are not yet implemented as I am looking for a good solution, if you have any ideas please do share :)
+
 # Seql
 SQL can get pretty tricky, there are different dialects to consider, different features to know about, these problems inevitably spawn many projects each trying to fix a different problem. Seql aims to combine some of the *best* packages out there to make using a SQL database much more painless.
 
