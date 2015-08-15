@@ -1,6 +1,6 @@
 import Database from './database';
 
 export default Database;
-export {default as Database} from './database';
+export {Database, Database as Seql};
 
 import './node';
