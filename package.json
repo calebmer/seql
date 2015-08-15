@@ -1,4 +1,21 @@
 {
+  "name": "seql",
+  "version": "1.0.0",
+  "description": "Easy cross-platform sql database querying and migration",
+  "author": "Caleb Meredith <calebmeredith8@gmail.com> (http://calebmer.github.io)",
+  "license": "MIT",
+  "keywords": [
+    "sql",
+    "database",
+    "migration",
+    "query"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calebmer/seql.git"
+  },
+  "bugs": "https://github.com/calebmer/seql/issues",
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
