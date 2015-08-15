@@ -5,10 +5,10 @@
   "author": "Caleb Meredith <calebmeredith8@gmail.com> (http://calebmer.github.io)",
   "license": "MIT",
   "keywords": [
-    "sql",
     "database",
     "migration",
-    "query"
+    "query",
+    "sql"
   ],
   "repository": {
     "type": "git",
@@ -20,8 +20,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "bin/test.sh",
-    "prepublish": "bin/build.sh"
+    "prepublish": "bin/build.sh",
+    "test": "bin/test.sh"
   },
   "dependencies": {
     "sql": "^0.58.0"
