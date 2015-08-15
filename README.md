@@ -1,7 +1,7 @@
 # Seql
 SQL can get pretty tricky, there are different dialects to consider, different features to know about, these problems inevitably spawn many projects each trying to fix a different problem. Seql aims to combine some of the *best* packages out there to make using a SQL database much more painless.
 
-Seql was also written with ES7 in mind, and also literally written in ES6. All asynchronous operations are promise based and the module is exported with ES6 consumers in mind. If you don't know ES6/7 see the [Babel reference page](https://babeljs.io/docs/learn-es2015/). If you are still using ES5 and are confused on how to get this module to work, read the ["Dear ES5 User"](#dear-es5-user) note.
+Seql was also written with ES7 in mind, and also literally written in ES6. All asynchronous operations are promise based and the module is exported with ES6 consumers in mind. If you don't know ES6/7 see the [Babel reference page](https://babeljs.io/docs/learn-es2015/). If you are using ES5 and are confused on how to get this module to work, read the ["Dear ES5 User"](#dear-es5-user) note.
 
 ## Usage
 ### Querying
