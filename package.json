@@ -1,6 +1,6 @@
 {
   "name": "seql",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Easy cross-platform sql database querying and migration",
   "author": "Caleb Meredith <calebmeredith8@gmail.com> (http://calebmer.github.io)",
   "license": "MIT",
