@@ -2,7 +2,7 @@ import Assert from 'assert';
 import {Readable} from 'stream';
 import Debugger from 'debug';
 import {Sql} from 'sql';
-import {getConnection} from './connection'
+import {getDriver} from './driver';
 
 const debug = new Debugger('seql');
 const debugQuery = new Debugger('seql:query');
@@ -28,9 +28,11 @@ class Database extends Sql {
 
       debug(`Connecting to a ${this.dialectName} database`);
 
-      getConnection(this.dialectName, this.connectionConfig)
+      let driver = getDriver(this.dialectName);
+
+      driver.connect(this.connectionConfig)
       .catch(reject)
-      .then(resolve);
+      .then(() => resolve(driver));
     });
 
     this.connection.catch(error => { throw error; });
@@ -53,7 +55,7 @@ class Database extends Sql {
     return new Promise((resolve, reject) => {
 
       this.connection
-      .then(connection => connection.executeQuery(query))
+      .then(driver => driver.executeQuery(query))
       .then(resolve);
     });
   }
@@ -67,7 +69,7 @@ class Database extends Sql {
     stream._read = function () { /* Silence... */ };
 
     this.connection
-    .then(connection => connection.streamQuery(query, stream));
+    .then(driver => driver.streamQuery(query, stream));
 
     return stream;
   }

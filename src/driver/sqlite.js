@@ -1,12 +1,12 @@
 import Sqlite, {Database} from 'sqlite3';
-import Connection from './connection';
+import Driver from './driver';
 
 // Enable verbose debugging
 Sqlite.verbose();
 
 const _streamWait = 4;
 
-class SqliteConnection extends Connection {
+class SqliteDriver extends Driver {
   _connect(config) {
 
     return new Promise((resolve, reject) => {
@@ -62,4 +62,4 @@ class SqliteConnection extends Connection {
   }
 }
 
-export default SqliteConnection;
+export default SqliteDriver;

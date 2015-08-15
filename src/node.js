@@ -9,7 +9,7 @@ function _proxyDatabase(method, ...aliases) {
 
   Node.prototype[method] = function () {
 
-    Assert(this.sql instanceof Database, 'Cannot get database connection');
+    Assert(this.sql instanceof Database, 'Cannot get database');
     return this.sql[method](this);
   };
 

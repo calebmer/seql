@@ -1,4 +1,4 @@
-class Connection {
+class Driver {
   connect(config) {
 
     return new Promise((resolve, reject) => {
@@ -12,7 +12,7 @@ class Connection {
           resolve();
         });
       } else {
-        reject(new Error('Connection not implemented'));
+        reject(new Error('Failed to connect'));
       }
     });
   }
@@ -26,4 +26,4 @@ class Connection {
   }
 }
 
-export default Connection;
+export default Driver;
